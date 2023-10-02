@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PagesController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,7 +19,10 @@ use App\Http\Controllers\PagesController;
 //     return view('welcome');
 // });
 Route::get('/', [PagesController::class, 'home'])->name('home');
+
 Route::get('/signup', [PagesController::class, 'signup'])->name('signup');
+Route::post('/signup_post', [AdminController::class, 'signup_post'])->name('signup_post');
+
 Route::get('/login', [PagesController::class, 'login'])->name('login');
 Route::get('/about', [PagesController::class, 'about'])->name('about');
 ?>
