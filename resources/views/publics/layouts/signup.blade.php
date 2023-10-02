@@ -11,7 +11,7 @@
                     <input type="text" name="phone"><br>
                     <label>Email</label><br>
                     <input type="text" name="email"><br>
-                    <input id="submit" type="submit" name="submit" value="Gửi">
+                    <button id="submit" type="submit"> Gửi </button>
                 </form>
 
     @endsection
