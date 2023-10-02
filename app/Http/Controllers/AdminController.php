@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 class AdminController extends Controller
 {
     //
-    public function signup_post (Request $request) {
+    public function signup_post(Request $request)
+    {
         $name = $request->name;
         $phone = $request->phone;
         $email = $request->email;
