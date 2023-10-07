@@ -13,7 +13,6 @@
         <label">Email</label><br>
             <input type="text" name="email"><br><br>
 
-            <a href="">Đăng Ký</a> <br><br>
             <button id="submit" type="submit"> Gửi </button>
 </form>
 
