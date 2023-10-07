@@ -23,7 +23,7 @@ Route::get('/', [PagesController::class, 'home'])->name('home');
 Route::get('/signup', [PagesController::class, 'signup'])->name('signup');
 Route::post('/signup_post', [AdminController::class, 'signup_post'])->name('signup_post');
 
-Route::get('/login', [PagesController::class, 'login'])->name('login');
-Route::get('/about', [PagesController::class, 'about'])->name('about');
-?>
+Route::get('/signin', [PagesController::class, 'signin'])->name('signin');
+Route::post('/signin_post', [AdminController::class, 'signin_post'])->name('signin_post');
 
+Route::get('/about', [PagesController::class, 'about'])->name('about');

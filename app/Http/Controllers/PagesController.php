@@ -23,10 +23,10 @@ class PagesController extends Controller
 
         ]);
     }
-    public function login()
+    public function signin()
     {
-        $content = 'login';
-        return view('publics.layouts.login', [
+        $content = 'signin';
+        return view('publics.layouts.signin', [
             'content' => $content,
 
         ]);
